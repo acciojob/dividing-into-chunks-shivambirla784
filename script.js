@@ -1,5 +1,8 @@
+const arr = [1, 2, 3, 4, 1, 0, 2, 2];
+
 const divide = (arr, n) => {
-  const result = [];
+  // Write your code here
+	const result = [];
   let currentSubarray = [];
   let currentSum = 0;
 
@@ -26,8 +29,5 @@ const divide = (arr, n) => {
   return result;
 };
 
-// Test case examples
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
-const n = 5;
-
-console.log(JSON.stringify(divide(arr, n)));  // Output: [[1, 2], [3], [4, 1, 0], [2, 2]]
+const n = prompt("Enter n: ");
+alert(JSON.stringify(divide(arr, n)));
